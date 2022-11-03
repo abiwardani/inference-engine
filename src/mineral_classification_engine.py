@@ -45,7 +45,7 @@ class MineralClassificationEngine:
     def get_specific_gravity_facts(self, specific_gravity):
         specific_gravity = clean_int_float(specific_gravity)
         
-        specific_gravities = [["specific-fravity", str(specific_gravity)]]
+        specific_gravities = [["specific-gravity", str(specific_gravity)]]
 
         for point in self.specific_gravity_points:
             specific_gravity_limit = clean_int_float(point)
@@ -70,9 +70,8 @@ class MineralClassificationEngine:
 r, _, _ = load_mineral_classification_rules()
 KBS = KnowledgeBase(r)
 inferenceEngine = InferenceEngine()
-initial_facts = [["color", "yellow"], ["color", "brown"], ["streak", "yellow"], ["streak", "brown"], ["luster", "earthy"], ["hardness", ">=1"], ["hardness", "<=5"], ["specific-gravity", ">=2.7"], ["specific-gravity", "<=4.3"], ["crystal-system", "cryptocrystalline"], ["diaphaneity", "opaque"], ["tenacity", "brittle"]]
-initial_facts = [['rock-group', 'sedimentary'], ['color', 'yellow'], ['color', 'brown'], ['streak', 'yellow'], ['streak', 'brown'], ['hardness', '1.2'], ['hardness', '>=1'], ['hardness', '<=2.5'], ['hardness', '<=3.5'], ['hardness', '<=3'], ['hardness', '<=4'], ['hardness', '<=6'], ['hardness', '<=6.5'], ['hardness', '<=5'], ['hardness', '<=7'], ['hardness', '<=2'], ['hardness', '<=1.5'], ['hardness', '<=8'], ['hardness', '<=4.5'], ['hardness', '<=10'], ['hardness', '<=9'], ['specific-fravity', '2.8'], ['specific-gravity', '>=2.7'], ['specific-gravity', '>=2.5'], ['specific-gravity', '<=4.3'], ['specific-gravity', '<=2.8'], ['specific-gravity', '>=2.8'], ['specific-gravity', '<=5'], ['specific-gravity', '<=7.4'], ['specific-gravity', '<=7.6'], ['specific-gravity', '<=5.3'], ['specific-gravity', '<=5.2'], ['specific-gravity', '<=3'], ['specific-gravity', '<=3.4'], ['specific-gravity', '<=4.6'], ['specific-gravity', '<=6.7'], ['specific-gravity', '<=3.5'], ['specific-gravity', '<=4.4'], ['specific-gravity', '<=4'], ['specific-gravity', '<=4.9'], ['specific-gravity', '<=4.1'], ['specific-gravity', '<=5.5'], ['specific-gravity', '>=2.6'], ['specific-gravity', '>=2.1'], ['specific-gravity', '<=3.6'], ['specific-gravity', '<=3.1'], ['specific-gravity', '>=2.3'], ['specific-gravity', '<=3.3'], ['specific-gravity', '<=3.7'], ['specific-gravity', '<=4.8'], ['specific-gravity', '<=5.8'], ['specific-gravity', '>=2.4'], ['specific-gravity', '<=2.9'], ['specific-gravity', '<=3.9'], ['luster', 'earthy'], ['crystal-system', 'cryptocrystalline'], ['diaphaneity', 'opaque'], ['weathered', 'false'], ['magnetic', 'false']]
-
+initial_facts = [["color", "white"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "2"], ["specific-gravity", "2.3"], ["crystal-system", "monoclinic"], ["cleavage", "perfect"], ["diaphaneity", "translucent"], ["fracture", "conchoidal"], ["tenacity", "inelastic"]]
+initial_facts = [['rock-group', 'sedimentary'], ['color', 'white'], ['streak', 'white'], ['hardness', '2'], ['specific-gravity', '2.3'], ['luster', 'vitreous'], ['fracture', 'conchoidal'], ['crystal-system', 'monoclinic'], ['cleavage', 'perfect'], ['diaphaneity', 'translucent'], ['tenacity', 'inelastic'], ['weathered', 'false'], ['magnetic', 'false']]
 learned_facts, KBS = inferenceEngine.forward_chaining(initial_facts, KBS)
 
 print(list(set(learned_facts)))
