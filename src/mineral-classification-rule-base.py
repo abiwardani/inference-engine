@@ -1,35 +1,37 @@
 import json
 
-rules = [[[["color", "white"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "white"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "white"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "white"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "white"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "white"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "colorless"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "colorless"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "colorless"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "colorless"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "colorless"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "colorless"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "red"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "red"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "red"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "red"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "red"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "red"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "green"], ["color", "blue"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "green"], ["color", "blue"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "green"], ["color", "blue"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "green"], ["color", "blue"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "green"], ["color", "blue"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "green"], ["color", "blue"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "yellow"], ["color", "grey"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "yellow"], ["color", "grey"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "yellow"], ["color", "grey"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "yellow"], ["color", "grey"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "yellow"], ["color", "grey"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
-[[["color", "yellow"], ["color", "grey"], ["streak", "white"], ["luster", "vitreus"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+from sympy import frac
+
+rules = [[[["color", "white"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "white"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "white"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "white"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "white"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "white"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "colorless"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "colorless"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "colorless"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "colorless"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "colorless"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "colorless"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "red"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "red"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "red"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "red"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "red"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "red"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "green"], ["color", "blue"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "green"], ["color", "blue"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "green"], ["color", "blue"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "green"], ["color", "blue"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "green"], ["color", "blue"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "green"], ["color", "blue"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "yellow"], ["color", "grey"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "yellow"], ["color", "grey"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "yellow"], ["color", "grey"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "yellow"], ["color", "grey"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "yellow"], ["color", "grey"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "transparent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
+[[["color", "yellow"], ["color", "grey"], ["streak", "white"], ["luster", "vitreous"], ["hardness", "3"], ["specific-gravity", "2.7"], ["diaphaneity", "translucent"], ["crystal-system", "hexagonal"]], [["mineral", "calcite"], ["chemical-composition", "carbonate"]]], 
 
 [[["color", "yellow"], ["weathered", "false"], ["streak", "green"], ["color", "black"], ["luster", "metallic"], ["hardness", ">=3.5"], ["hardness", "<=4"], ["specific-graivity", ">=4.1"], ["specific-gravity", "<=4.3"], ["fracture", "irregular"], ["diaphaneity", "opaque"], ["cleavage", "poor"], ["tenacity", "brittle"], ["crystal-system", "tetragonal"]], [["mineral", "chalcopyrite"], ["chemical-composition", "copper iron sulfide"]]], 
 [[["color", "yellow"], ["weathered", "false"], ["streak", "green"], ["color", "black"], ["luster", "metallic"], ["hardness", ">=3.5"], ["hardness", "<=4"], ["specific-graivity", ">=4.1"], ["specific-gravity", "<=4.3"], ["fracture", "uneven"], ["diaphaneity", "opaque"], ["cleavage", "poor"], ["tenacity", "brittle"], ["crystal-system", "tetragonal"]], [["mineral", "chalcopyrite"], ["chemical-composition", "copper iron sulfide"]]], 
@@ -325,19 +327,44 @@ rules = [[[["color", "white"], ["streak", "white"], ["luster", "vitreus"], ["har
 
 hardnesses = []
 specific_gravities = []
+lusters = []
+fractures = []
+tenacities = []
+crystal_systems = []
+cleavages = []
 
 for rule in rules:
     for pair in rule[0]:
         if pair[0] == "hardness":
             if "=" in pair[1]:
-                hardnesses.append(pair[1][2:])
+                hardnesses.append(float(pair[1][2:]))
             else:
-                hardnesses.append(pair[1])
+                hardnesses.append(float(pair[1]))
         if pair[0] == "specific-gravity":
             if "=" in pair[1]:
-                specific_gravities.append(pair[1][2:])
+                specific_gravities.append(float(pair[1][2:]))
             else:
-                specific_gravities.append(pair[1])
+                specific_gravities.append(float(pair[1]))
+        if pair[0] == "luster":
+            lusters.append(pair[1])
+        if pair[0] == "fracture":
+            fractures.append(pair[1])
+        if pair[0] == "tenacity":
+            tenacities.append(pair[1])
+        if pair[0] == "crystal-system":
+            crystal_systems.append(pair[1])
+        if pair[0] == "cleavage":
+            cleavages.append(pair[1])
+
+print(list(set(lusters)))
+print()
+print(list(set(fractures)))
+print()
+print(list(set(tenacities)))
+print()
+print(list(set(crystal_systems)))
+print()
+print(list(set(cleavages)))
 
 h_points = list(set(hardnesses))
 sg_points = list(set(specific_gravities))
